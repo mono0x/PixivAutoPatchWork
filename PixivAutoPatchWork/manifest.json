@@ -1,0 +1,15 @@
+{
+  "name": "Pixiv-AutoPatchWork",
+  "version": "0.0.1",
+  "description": "pixivでAutoPatchWorkを利用すると画像が読み込まれない問題に対処する拡張機能です。",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.pixiv.net/*"
+      ],
+      "js": [ "content.js" ],
+      "run_at": "document_end"
+    }
+  ],
+  "update_url": "http://monoweb.info/chrome/extension/pixivautopatchwork/updates.xml"
+}
